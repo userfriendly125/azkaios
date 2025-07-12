@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "689130858914",
+    "firebase_url": "https://azka-saas-pos-default-rtdb.firebaseio.com",
+    "project_id": "azka-saas-pos",
+    "storage_bucket": "azka-saas-pos.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689130858914:android:a216357b718e76fc912afb",
+        "android_client_info": {
+          "package_name": "com.azkapos.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "689130858914-ncdt2vi65e0s54nl7jko1dq57u5lhhn4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxiWEQFfp8wQxciupAQPsnqgoVAfXmlok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "689130858914-ncdt2vi65e0s54nl7jko1dq57u5lhhn4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,23 @@
+workflows:
+  ios-workflow:
+    name: Build & Publish Azka Cloud POS Accounting
+    instance_type: mac_mini_m2
+    environment:
+      vars:
+        XCODE_WORKSPACE: "AzkaCloud.xcworkspace"
+        XCODE_SCHEME: "AzkaCloud-POS-Accounting"
+      ios_signing:
+        distribution_type: app_store
+        bundle_identifier: "com.yourcompany.azkacloudpos"
+    scripts:
+      - name: Install pods
+        script: |
+          pod install
+      - name: Build iOS app
+        script: |
+          xcodebuild -workspace "$XCODE_WORKSPACE" \
+                     -scheme "$XCODE_SCHEME" \
+                     -sdk iphoneos \
+                     -configuration Release \
+                     CODE_SIGNING_ALLOWED=YES
+    # ...publishing, triggers, caching etc.
